@@ -3,12 +3,12 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-import './assets/styles/border.css'
+import 'styles/border.css'
+import 'styles/iconfont.css'
+import fastClick from 'fastclick'
 
 // 1像素边框的解决方案
-import './assets/styles/reset.css'
-
-import fastClick from 'fastclick'
+import 'styles/reset.css'
 
 Vue.config.productionTip = false
 

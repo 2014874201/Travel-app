@@ -5,12 +5,15 @@ import App from './App'
 import router from './router'
 import 'styles/border.css'
 import 'styles/iconfont.css'
+import 'swiper/dist/css/swiper.css'
 import fastClick from 'fastclick'
+import VueAwesomeSwiper from 'vue-awesome-swiper'
 
 // 1像素边框的解决方案
 import 'styles/reset.css'
 
 Vue.config.productionTip = false
+Vue.use(VueAwesomeSwiper)
 
 // 绑定到body上，解决移动端300毫秒延迟（这是为了检查用户是否在做双击）
 fastClick.attach(document.body)

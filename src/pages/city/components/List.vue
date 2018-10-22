@@ -5,7 +5,8 @@
         <div class="title border-topbottom">当前城市</div>
         <div class="button-list">
           <div class="button-wrapper">
-            <div class="button">{{this.currentCity}}</div>
+            <!-- <div class="button">{{this.currentCity}}</div> -->
+            <div class="button">s</div>
           </div>
         </div>
       </div>
@@ -61,16 +62,16 @@ export default {
   },
   methods: {
     handleCityClick (city) {
-      this.changeCity(city)
+      // this.changeCity(city)
       this.$router.push('/')
-    },
+    }
     // ...mapMutations(['changeCity'])
   },
-  watch: {
+  watch: { // 监听到改变显示
     letter () {
       if (this.letter) {
-        const element = this.$refs[this.letter][0]
-        this.scroll.scrollToElement(element)
+        const element = this.$refs[this.letter][0] // dom元素
+        this.scroll.scrollToElement(element) // wrapper滚动区域滚到element
       }
     }
   },

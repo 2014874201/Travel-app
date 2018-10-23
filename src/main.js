@@ -8,6 +8,7 @@ import 'styles/iconfont.css'
 import 'swiper/dist/css/swiper.css'
 import fastClick from 'fastclick'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
+import store from './store'
 
 // 1像素边框的解决方案
 import 'styles/reset.css'
@@ -21,6 +22,7 @@ fastClick.attach(document.body)
 new Vue({
   el: '#app',
   router,
+  store,
   components: { App },
   template: '<App/>'
 })

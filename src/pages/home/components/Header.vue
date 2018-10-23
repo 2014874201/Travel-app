@@ -28,7 +28,7 @@ export default {
 
 <style lang="stylus" scoped>
   @import '~styles/varibles.styl'
-  .headers
+  .header
     display: flex
     line-height: $headerHeight
     background: $bgColor
